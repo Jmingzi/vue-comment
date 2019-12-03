@@ -1,29 +1,52 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <comment
+      :list="mock"
+    />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import Comment from './components/comment.vue'
+
+const mock = [
+  {
+    id: 1,
+    content: '文案氛围二',
+    user: {
+      id: 1,
+      name: '姓名',
+      avatar: 'https://avatars3.githubusercontent.com/u/25201066?v=4'
+    }
+  },
+  {
+    id: 2,
+    content: 'Typed some nice words in markdown without logging-in, then logged-in and came back here, those words were gone. Anyway, good job.',
+    user: {
+      id: 2,
+      name: 'mogita',
+      avatar: 'https://avatars3.githubusercontent.com/u/1173069?v=4'
+    }
+  }
+]
 
 export default Vue.extend({
   name: 'app',
+
+  data () {
+    return {
+      mock
+    }
+  },
+
   components: {
-    HelloWorld
+    Comment
   }
 })
 </script>
 
 <style lang="less">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
