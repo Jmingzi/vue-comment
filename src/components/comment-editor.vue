@@ -12,7 +12,7 @@
         >Preview</span>
       </div>
       <div class="flex-center-vertical" slot="header-right">
-        <a href="javascript:;">使用 github 登录</a>
+        <a href="javascript:;" @click="handleLogin">使用 github 登录</a>
       </div>
       <div class="vue__editor-input">
         <textarea
@@ -53,12 +53,13 @@ import hljs from 'highlight.js'
 import marked from 'marked'
 import { createComponent, reactive, watch, computed, toRefs, onMounted } from '@vue/composition-api'
 import Box from './box.vue'
+import { User } from '../types/comment'
 
 const getQuotaReg = function (str: string) {
   return new RegExp(`> ${str}\n`, 'g')
 }
 
-export default createComponent<{ quoteInput: string, user: any }>({
+export default createComponent<{ quoteInput: string, user: User }>({
   components: {
     Box
   },
@@ -120,7 +121,10 @@ export default createComponent<{ quoteInput: string, user: any }>({
       handleTab,
       handleSubmit,
       ...toRefs(state),
-      btnDisabled
+      btnDisabled,
+      handleLogin () {
+        context.emit('login')
+      }
     }
   },
 

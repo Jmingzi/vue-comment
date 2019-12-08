@@ -5,7 +5,13 @@
         <template v-if="nums">共 <span>36</span> 条评论</template>
         <template>沙发还在～</template>
       </span>
-      <a href="https://github.com/Jmingzi/vue-comment" target="_blank" class="vue-comment__header-logo">来自 vue 通用评论组件</a>
+      <a
+        href="https://github.com/Jmingzi/vue-comment"
+        target="_blank"
+        class="vue-comment__header-logo"
+      >
+        来自 v-comment
+      </a>
     </div>
     <div class="vue-comment__list">
       <comment-item
@@ -19,6 +25,7 @@
       :quote-input.sync="currentReplyContent"
       :user="user"
       @submit="handleSubmit"
+      @login="login"
     />
   </div>
 </template>
@@ -69,6 +76,12 @@ export default Vue.extend({
 
     handleSubmit (input: string, inputCompiler: string) {
       this.$emit('submit', input, inputCompiler)
+    },
+
+    login () {
+      if (!this.user) {
+        this.$emit('login')
+      }
     }
   }
 })

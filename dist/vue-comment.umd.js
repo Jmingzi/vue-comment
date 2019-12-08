@@ -2838,12 +2838,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2b4766d0-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/comment.vue?vue&type=template&id=5e1b6d36&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vue-comment"},[_c('div',{staticClass:"vue-comment__header"},[_c('span',{staticClass:"vue-comment__header-num"},[(_vm.nums)?[_vm._v("共 "),_c('span',[_vm._v("36")]),_vm._v(" 条评论")]:_vm._e(),[_vm._v("沙发还在～")]],2),_c('a',{staticClass:"vue-comment__header-logo",attrs:{"href":"https://github.com/Jmingzi/vue-comment","target":"_blank"}},[_vm._v("来自 vue 通用评论组件")])]),_c('div',{staticClass:"vue-comment__list"},_vm._l((_vm.list),function(item){return _c('comment-item',{key:item.id,attrs:{"detail":item},on:{"opt":function (type) { return _vm.handleOpt(type, item); }}})}),1),_c('comment-editor',{attrs:{"quote-input":_vm.currentReplyContent,"user":_vm.user},on:{"update:quoteInput":function($event){_vm.currentReplyContent=$event},"update:quote-input":function($event){_vm.currentReplyContent=$event},"submit":_vm.handleSubmit}})],1)}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2b4766d0-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/comment.vue?vue&type=template&id=e1b26e5e&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vue-comment"},[_c('div',{staticClass:"vue-comment__header"},[_c('span',{staticClass:"vue-comment__header-num"},[(_vm.nums)?[_vm._v("共 "),_c('span',[_vm._v("36")]),_vm._v(" 条评论")]:_vm._e(),[_vm._v("沙发还在～")]],2),_c('a',{staticClass:"vue-comment__header-logo",attrs:{"href":"https://github.com/Jmingzi/vue-comment","target":"_blank"}},[_vm._v(" 来自 v-comment ")])]),_c('div',{staticClass:"vue-comment__list"},_vm._l((_vm.list),function(item){return _c('comment-item',{key:item.id,attrs:{"detail":item},on:{"opt":function (type) { return _vm.handleOpt(type, item); }}})}),1),_c('comment-editor',{attrs:{"quote-input":_vm.currentReplyContent,"user":_vm.user},on:{"update:quoteInput":function($event){_vm.currentReplyContent=$event},"update:quote-input":function($event){_vm.currentReplyContent=$event},"submit":_vm.handleSubmit,"login":_vm.login}})],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/comment.vue?vue&type=template&id=5e1b6d36&
+// CONCATENATED MODULE: ./src/components/comment.vue?vue&type=template&id=e1b26e5e&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.number.constructor.js
 var es_number_constructor = __webpack_require__("a9e3");
@@ -4150,14 +4150,14 @@ var comment_item_component = normalizeComponent(
 )
 
 /* harmony default export */ var comment_item = (comment_item_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2b4766d0-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/comment-editor.vue?vue&type=template&id=05b8802a&
-var comment_editorvue_type_template_id_05b8802a_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vue__editor"},[_c('box',{attrs:{"url":_vm.user && _vm.user.avatar}},[_c('div',{staticClass:"vue__editor-tabs",attrs:{"slot":"header-left"},slot:"header-left"},[_c('span',{class:['vue__editor-tab', { active: _vm.tab === 0 }],on:{"click":function($event){return _vm.handleTab(0)}}},[_vm._v("Write")]),_c('span',{class:['vue__editor-tab', { active: _vm.tab === 1 }],on:{"click":function($event){return _vm.handleTab(1)}}},[_vm._v("Preview")])]),_c('div',{staticClass:"flex-center-vertical",attrs:{"slot":"header-right"},slot:"header-right"},[_c('a',{attrs:{"href":"javascript:;"}},[_vm._v("使用 github 登录")])]),_c('div',{staticClass:"vue__editor-input"},[_c('textarea',{directives:[{name:"show",rawName:"v-show",value:(_vm.tab === 0),expression:"tab === 0"},{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],ref:"textarea",attrs:{"rows":"3","placeholder":"Leave a comment","maxlength":"1000"},domProps:{"value":(_vm.input)},on:{"input":function($event){if($event.target.composing){ return; }_vm.input=$event.target.value}}}),_vm._v(" "),(_vm.tab === 1)?_c('div',{staticClass:"markdown-body editor__style",staticStyle:{"padding":"0"},domProps:{"innerHTML":_vm._s(_vm.inputCompiler || 'Leave a comment')}},[_c('span',[_vm._v("转化中...")])]):_vm._e()]),_c('div',{staticStyle:{"text-align":"right","padding-top":"10px"}},[_c('div',{staticClass:"vue__editor__btn",class:{
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2b4766d0-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/comment-editor.vue?vue&type=template&id=51ff265f&
+var comment_editorvue_type_template_id_51ff265f_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vue__editor"},[_c('box',{attrs:{"url":_vm.user && _vm.user.avatar}},[_c('div',{staticClass:"vue__editor-tabs",attrs:{"slot":"header-left"},slot:"header-left"},[_c('span',{class:['vue__editor-tab', { active: _vm.tab === 0 }],on:{"click":function($event){return _vm.handleTab(0)}}},[_vm._v("Write")]),_c('span',{class:['vue__editor-tab', { active: _vm.tab === 1 }],on:{"click":function($event){return _vm.handleTab(1)}}},[_vm._v("Preview")])]),_c('div',{staticClass:"flex-center-vertical",attrs:{"slot":"header-right"},slot:"header-right"},[_c('a',{attrs:{"href":"javascript:;"},on:{"click":_vm.handleLogin}},[_vm._v("使用 github 登录")])]),_c('div',{staticClass:"vue__editor-input"},[_c('textarea',{directives:[{name:"show",rawName:"v-show",value:(_vm.tab === 0),expression:"tab === 0"},{name:"model",rawName:"v-model",value:(_vm.input),expression:"input"}],ref:"textarea",attrs:{"rows":"3","placeholder":"Leave a comment","maxlength":"1000"},domProps:{"value":(_vm.input)},on:{"input":function($event){if($event.target.composing){ return; }_vm.input=$event.target.value}}}),_vm._v(" "),(_vm.tab === 1)?_c('div',{staticClass:"markdown-body editor__style",staticStyle:{"padding":"0"},domProps:{"innerHTML":_vm._s(_vm.inputCompiler || 'Leave a comment')}},[_c('span',[_vm._v("转化中...")])]):_vm._e()]),_c('div',{staticStyle:{"text-align":"right","padding-top":"10px"}},[_c('div',{staticClass:"vue__editor__btn",class:{
           disabled: _vm.btnDisabled
         },on:{"click":function($event){return _vm.handleSubmit()}}},[_vm._v(" 提 交 ")])])])],1)}
-var comment_editorvue_type_template_id_05b8802a_staticRenderFns = []
+var comment_editorvue_type_template_id_51ff265f_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/comment-editor.vue?vue&type=template&id=05b8802a&
+// CONCATENATED MODULE: ./src/components/comment-editor.vue?vue&type=template&id=51ff265f&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.symbol.js
 var es_symbol = __webpack_require__("a4d3");
@@ -4311,7 +4311,10 @@ var getQuotaReg = function getQuotaReg(str) {
       handleTab: handleTab,
       handleSubmit: handleSubmit
     }, toRefs(state), {
-      btnDisabled: btnDisabled
+      btnDisabled: btnDisabled,
+      handleLogin: function handleLogin() {
+        context.emit('login');
+      }
     });
   },
   props: {
@@ -4336,8 +4339,8 @@ var getQuotaReg = function getQuotaReg(str) {
 
 var comment_editor_component = normalizeComponent(
   components_comment_editorvue_type_script_lang_ts_,
-  comment_editorvue_type_template_id_05b8802a_render,
-  comment_editorvue_type_template_id_05b8802a_staticRenderFns,
+  comment_editorvue_type_template_id_51ff265f_render,
+  comment_editorvue_type_template_id_51ff265f_staticRenderFns,
   false,
   null,
   null,
@@ -4386,6 +4389,11 @@ external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(vue_composition_api_m
     },
     handleSubmit: function handleSubmit(input, inputCompiler) {
       this.$emit('submit', input, inputCompiler);
+    },
+    login: function login() {
+      if (!this.user) {
+        this.$emit('login');
+      }
     }
   }
 }));
