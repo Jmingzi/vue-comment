@@ -47,6 +47,6 @@ export default Vue.extend({
 </script>
 
 <style lang="less">
-#app {
-}
+@import './style/var.less';
+@import './style/index.less';
 </style>

@@ -1,0 +1,151 @@
+.vue-comment {
+  max-width: 700px;
+  margin: 10px auto;
+  font-size: 14px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    line-height: 45px;
+    border-bottom: 1px @border-color dashed;
+    &-num {
+      color: #666;
+      span {
+        color: @main-color;
+      }
+    }
+    &-logo {
+      color: #999999;
+      font-size: 12px;
+      text-decoration: none;
+      &:hover {
+        color: @main-color;
+        text-decoration: underline;
+      }
+    }
+  }
+  &__list {
+    padding: 20px 0;
+  }
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.vue__editor {
+  &-tabs {
+    display: flex;
+    padding-top: 10px;
+  }
+  &-tab {
+    padding: 10px;
+    background-color: @bg-color;
+    color: #666;
+    cursor: pointer;
+    &:hover {
+      color: #000;
+    }
+    &.active {
+      background-color: #fff;
+      border: 1px @border-color solid;
+      border-bottom: none;
+      border-radius: 4px;
+      color: #000;
+    }
+  }
+  &-input {
+    display: flex;
+    textarea {
+      flex-grow: 1;
+      padding: 0;
+      border: none;
+      font: inherit;
+      -webkit-appearance: none;
+      line-height: 1.6;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__btn {
+    display: inline-block;
+    padding: 7px 20px;
+    background-color: @main-color;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    &.disabled {
+      opacity: 0.5;
+      cursor: initial;
+    }
+  }
+  .flex-center-vertical {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.vue-comment__box {
+  display: flex;
+  margin-bottom: 20px;
+
+  &-right {
+    flex-grow: 1;
+    border: 1px @border-color solid;
+    border-radius: 4px;
+  }
+  &-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    // line-height: 35px;
+    background-color: @bg-color;
+    padding: 0 10px;
+    a {
+      text-decoration: none;
+      color: @main-color;
+    }
+    &:before {
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 10px;
+      border: 1px @border-color solid;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%) rotate(45deg);
+      border-radius: 3px;
+      background-color: @bg-color;
+    }
+  }
+  &-content {
+    padding: 20px 10px;
+  }
+}
+
+.vue-comment {
+  &__time {
+    margin-left: 10px;
+    color: #666;
+  }
+  &__opt {
+    color: #666;
+    span {
+      margin-left: 10px;
+      cursor: pointer;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
+
+.vue-avatar {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-right: 15px;
+}

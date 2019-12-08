@@ -1,18 +1,28 @@
 {
-  "name": "vue-comment",
-  "version": "0.1.0",
-  "private": true,
+  "name": "v-comment",
+  "version": "0.1.13",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vue-comment './src/components/comment.vue'",
+    "build:demo": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
+  "main": "./dist/vue-comment.umd.min.js",
+  "module": "./dist/vue-comment.umd.min.js",
+  "typings": "./src/types/comment.d.ts",
   "dependencies": {
     "@vue/composition-api": "^0.3.4",
     "core-js": "^3.4.3",
+    "highlight.js": "^9.16.2",
+    "marked": "^0.7.0",
     "vue": "^2.6.10"
   },
+  "files": [
+    "dist",
+    "src"
+  ],
   "devDependencies": {
     "@types/jest": "^24.0.19",
     "@vue/cli-plugin-babel": "^4.1.0",

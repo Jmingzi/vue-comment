@@ -18,8 +18,3 @@ export type CommentProps = {
   nums: number
   list: CommentList
 }
-
-export type CommentSubmit = {
-  content: string
-  user: User
-}

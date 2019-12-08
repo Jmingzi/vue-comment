@@ -11,7 +11,11 @@
       </template>
       <span v-else @click="handleOpt('reply')">回复</span>
     </div>
-    <span>{{ detail.content }}</span>
+    <div
+      class="markdown-body editor__style"
+      style="padding: 0;"
+      v-html="detail.content"
+    />
   </box>
 </template>
 
@@ -45,24 +49,3 @@ export default Vue.extend({
   }
 })
 </script>
-
-<style lang="less">
-@import '../style/var';
-
-.vue-comment {
-  &__time {
-    margin-left: 10px;
-    color: #666;
-  }
-  &__opt {
-    color: #666;
-    span {
-      margin-left: 10px;
-      cursor: pointer;
-      &:hover {
-        color: #000;
-      }
-    }
-  }
-}
-</style>

@@ -28,14 +28,3 @@ export default Vue.extend({
   }
 })
 </script>
-
-<style lang="less">
-.vue-avatar {
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  overflow: hidden;
-  margin-right: 15px;
-}
-</style>
