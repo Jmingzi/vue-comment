@@ -14,7 +14,7 @@
     <div
       class="markdown-body editor__style"
       style="padding: 0;"
-      v-html="detail.content"
+      v-html="detail.inputCompiler"
     />
   </box>
 </template>

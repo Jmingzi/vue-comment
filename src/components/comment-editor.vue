@@ -16,7 +16,7 @@
         </span>
       </div>
       <div class="flex-center-vertical" slot="header-right">
-        <a href="javascript:;" @click="handleLogin">使用 github 登录</a>
+        <a v-if="!user" href="javascript:;" @click="handleLogin">使用 github 登录</a>
       </div>
       <div class="vue__editor-input">
         <textarea
@@ -26,6 +26,8 @@
           rows="3"
           placeholder="Leave a comment"
           maxlength="1000"
+          style="height: auto"
+          @input="handleInput"
         />
         <div
           v-if="tab === 1"
@@ -61,6 +63,11 @@ import { User } from '../types/comment'
 
 const getQuotaReg = function (str: string) {
   return new RegExp(`> ${str}\n`, 'g')
+}
+const handleInput = function (e: any) {
+  e.target.style.height = 'auto'
+  const height = e.target.scrollHeight
+  e.target.style.height = `${height}px`
 }
 
 export default createComponent<{ quoteInput: string, user: User }>({
@@ -128,7 +135,8 @@ export default createComponent<{ quoteInput: string, user: User }>({
       btnDisabled,
       handleLogin () {
         context.emit('login')
-      }
+      },
+      handleInput
     }
   },
 

@@ -13,7 +13,7 @@ import Comment from './components/comment.vue'
 const mock = [
   {
     id: 1,
-    content: '文案氛围二',
+    inputCompiler: '文案氛围二',
     user: {
       id: 1,
       name: '姓名',
@@ -22,7 +22,7 @@ const mock = [
   },
   {
     id: 2,
-    content: 'Typed some nice words in markdown without logging-in, then logged-in and came back here, those words were gone. Anyway, good job.',
+    inputCompiler: 'Typed some nice words in markdown without logging-in, then logged-in and came back here, those words were gone. Anyway, good job.',
     user: {
       id: 2,
       name: 'mogita',

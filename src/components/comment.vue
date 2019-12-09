@@ -3,14 +3,14 @@
     <div class="vue-comment__header">
       <span class="vue-comment__header-num">
         <template v-if="nums">共 <span>{{ nums }}</span> 条评论</template>
-        <template>沙发还在～</template>
+        <template v-else>沙发还在～</template>
       </span>
       <a
         href="https://github.com/Jmingzi/vue-comment"
         target="_blank"
         class="vue-comment__header-logo"
       >
-        来自 v-comment
+        what`s v-comment ?
       </a>
     </div>
     <div class="vue-comment__list">
@@ -18,7 +18,7 @@
         v-for="item in list"
         :key="item.id"
         :detail="item"
-        :is-self="item.user.id === user.id"
+        :is-self="user && item.user.id === user.id"
         @opt="type => handleOpt(type, item)"
       />
     </div>

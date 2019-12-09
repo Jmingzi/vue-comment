@@ -11,6 +11,7 @@ npm i v-comment -save
   :list="list<CommentProps>"
   @login="handleLogin"
   @submit="handleSubmit"
+  @del="handleDel"
 />
 
 <script>
@@ -40,7 +41,8 @@ export type CommentListItem = {
   id: string
   user: User
   createdTimeStamp: number
-  content: string
+  input: string
+  inputCompiler: string
 }
 
 export type CommentList = Array<CommentListItem>
