@@ -120,12 +120,12 @@ export default createComponent<{ quoteInput: string, user: User }>({
             : state.input
           }`
           state.oldInput = val
+          Vue.nextTick(() => {
+            context.emit('update:quote-input', '')
+            // @ts-ignore
+            context.refs.textarea.focus()
+          })
         }
-        Vue.nextTick(() => {
-          context.emit('update:quote-input', '')
-          // @ts-ignore
-          context.refs.textarea.focus()
-        })
       })
     })
     return {

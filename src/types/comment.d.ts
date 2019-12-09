@@ -8,7 +8,8 @@ export type CommentListItem = {
   id: string
   user: User
   createdTimeStamp: number
-  content: string
+  input: string
+  inputCompiler: string
 }
 
 export type CommentList = Array<CommentListItem>

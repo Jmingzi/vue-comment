@@ -72,7 +72,7 @@ export default Vue.extend({
   methods: {
     handleOpt (type: 'reply' | 'edit' | 'del', item: CommentListItem) {
       if (type === 'reply') {
-        this.currentReplyContent = item.content
+        this.currentReplyContent = item.input
       } else if (type === 'del') {
         this.$emit('del', item)
       }

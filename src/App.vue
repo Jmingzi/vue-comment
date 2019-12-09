@@ -14,6 +14,7 @@ const mock = [
   {
     id: 1,
     inputCompiler: '文案氛围二',
+    input: '文案氛围二',
     user: {
       id: 1,
       name: '姓名',
@@ -23,6 +24,7 @@ const mock = [
   {
     id: 2,
     inputCompiler: 'Typed some nice words in markdown without logging-in, then logged-in and came back here, those words were gone. Anyway, good job.',
+    input: 'Typed some nice words in markdown without logging-in, then logged-in and came back here, those words were gone. Anyway, good job.',
     user: {
       id: 2,
       name: 'mogita',
