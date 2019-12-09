@@ -5,11 +5,15 @@
         <span
           :class="['vue__editor-tab', { active: tab === 0 }]"
           @click="handleTab(0)"
-        >Write</span>
+        >
+          Write
+        </span>
         <span
           :class="['vue__editor-tab', { active: tab === 1 }]"
           @click="handleTab(1)"
-        >Preview</span>
+        >
+          Preview
+        </span>
       </div>
       <div class="flex-center-vertical" slot="header-right">
         <a href="javascript:;" @click="handleLogin">使用 github 登录</a>

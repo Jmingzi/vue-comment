@@ -2,7 +2,7 @@
   <div class="vue-comment">
     <div class="vue-comment__header">
       <span class="vue-comment__header-num">
-        <template v-if="nums">共 <span>36</span> 条评论</template>
+        <template v-if="nums">共 <span>{{ nums }}</span> 条评论</template>
         <template>沙发还在～</template>
       </span>
       <a
@@ -18,6 +18,7 @@
         v-for="item in list"
         :key="item.id"
         :detail="item"
+        :is-self="item.user.id === user.id"
         @opt="type => handleOpt(type, item)"
       />
     </div>
@@ -68,9 +69,11 @@ export default Vue.extend({
   },
 
   methods: {
-    handleOpt (type: 'reply' | 'edit', item: CommentListItem) {
+    handleOpt (type: 'reply' | 'edit' | 'del', item: CommentListItem) {
       if (type === 'reply') {
         this.currentReplyContent = item.content
+      } else if (type === 'del') {
+        this.$emit('del', item)
       }
     },
 

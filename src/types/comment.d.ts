@@ -18,3 +18,7 @@ export type CommentProps = {
   nums: number
   list: CommentList
 }
+
+declare module 'v-comment' {
+  export default function (props: CommentProps): JSX.Element
+}

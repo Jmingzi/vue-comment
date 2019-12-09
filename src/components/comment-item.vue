@@ -2,12 +2,12 @@
   <box :url="detail.user.avatar">
     <div slot="header-left" style="padding: 10px 0">
       <a href="https://github.com/jmingzi" target="_blank">{{ detail.user.name }}</a>
-      <span class="vue-comment__time">commented on 1年前</span>
+      <span class="vue-comment__time">commented on {{ detail.createdTimeStamp }}</span>
     </div>
     <div slot="header-right" class="vue-comment__opt" style="padding: 10px 0">
       <template v-if="isSelf">
-        <span @click="handleOpt('edit')">编辑</span>
-        <span>删除</span>
+        <span v-if="false" @click="handleOpt('edit')">编辑</span>
+        <span @click="handleOpt('del')">删除</span>
       </template>
       <span v-else @click="handleOpt('reply')">回复</span>
     </div>
