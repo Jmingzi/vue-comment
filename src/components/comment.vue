@@ -25,6 +25,7 @@
     <comment-editor
       :quote-input.sync="currentReplyContent"
       :user="user"
+      ref="editor"
       @submit="handleSubmit"
       @login="login"
     />
@@ -85,6 +86,11 @@ export default Vue.extend({
       if (!this.user) {
         this.$emit('login')
       }
+    },
+
+    resetEditor () {
+      // @ts-ignore
+      this.$refs.editor.resetEditor()
     }
   }
 })

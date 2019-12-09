@@ -136,7 +136,13 @@ export default createComponent<{ quoteInput: string, user: User }>({
       handleLogin () {
         context.emit('login')
       },
-      handleInput
+      handleInput,
+      resetEditor () {
+        state.tab = 0
+        state.input = ''
+        state.inputCompiler = ''
+        state.oldInput = ''
+      }
     }
   },
 
