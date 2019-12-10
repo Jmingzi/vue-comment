@@ -9,8 +9,7 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
-  "main": "./dist/vue-comment.umd.min.js",
-  "module": "./dist/vue-comment.umd.min.js",
+  "main": "./dist/vue-comment.common.js",
   "typings": "./src/types/comment.d.ts",
   "dependencies": {
     "@vue/composition-api": "^0.3.4",
